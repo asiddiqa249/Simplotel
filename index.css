@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.mainDiv {
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.m_header {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ff6666;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 2px;
+}
+.m_header .frst-a{
+    margin-left: 5%;
+}
+.m_header .last-a{
+    margin-right: 5%;
+}
+.m_header a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #f9aed3 0%,rgb(251, 251, 188) 100%);
+    margin-bottom: 15px;
+}
+
+.right-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-half,
+.right-half {
+    width: 50%;
+    height: 100%;
+}
+
+.left-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.left-half h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    
+}
+
+.left-half p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+}
+
+.left-half button {
+    width: 250px;
+    padding: 3%;
+    color: white;
+    background-color: #fd7979;
+    border: none;
+}
+.sec-main {
+    background: linear-gradient(to left, #f9afd4 0%, rgb(251, 251, 188) 100%);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    padding: 5%;
+}
+.sec-main .right-box{
+    padding-top: 10%;
+    padding-right: 5%;
+}
+.left-image,
+.right-box {
+    width: 50%;
+    height: 100%;
+}
+
+.left-image {
+    display: flex;
+    padding: 50px;
+}
+
+.sub-left,
+.sub-right {
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+}
+
+.sub-left img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.sub-right img {
+    width: 100%;
+    height: auto;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #fb7070;
+    background-color: #f87474;
+    padding: 20px;
+    line-height: 1.6;
+    width: 70%;
+}
+
+.text p {
+    font-size: 20px;
+}
+.text p img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.text h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+@media(max-width:768px){
+    .m_header{
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px){
+    .home {
+        flex-direction: column;
+        height: auto;
+    }
+    .text {
+        width: 100%;
+        margin: 0;
+    }
+    .sec-main .right-box{
+        padding-right: 3%;
+    }
+
+    .left-half,
+    .right-half {
+        width: 100%;
+    }
+
+    .right-half img {
+        object-fit: contain;
+    }
+
+    .sec-main {
+        flex-direction: column;
+    }
+
+    .left-image,
+    .right-box {
+        width: 100%;
+        padding: 20px;
+    }
+    .sec-main .right-box {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .m_header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .m_header .frst-a {
+       margin-left: 0;
+    }
+    .m_header a {
+        margin: 10px 0;
+    }
+
+    .home,
+    .sec-main {
+        height: auto;
+    }
+
+    .left-half h1 {
+        font-size: 40px;
+    }
+
+    .left-half p {
+        font-size: 16px;
+    }
+
+    .left-half button {
+        width: 100%;
+    }
+    .right-box p{
+        font-size: 16px;
+    }
+    .right-box h1{
+        font-size: 40px;
+    }
+
+    .left-image,
+    .right-box {
+        padding: 20px;
+    }
+
+    .sub-left,
+    .sub-right {
+        margin: 10px;
+    }
+
+    .right-box {
+        margin-right: 0;
+    }
+
+    .sec-main {
+        flex-direction: column;
+    }
+
+    .contact {
+        margin-bottom: 0;
+    }
+}
